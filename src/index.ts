@@ -1,13 +1,14 @@
 import readline from "readline";
 
 import { SingleResponsibility } from "./SOLID/1.single-responsibility";
+import { OpenClosePrinciple } from "./SOLID/2.open-close";
+import { LiskovSubstitutionPrinciple } from "./SOLID/3.liskov-substitution";
+import { InterfaceSegregationPrinciple } from "./SOLID/4.interface-segregation";
 import { SingletonPattern } from "./design-patterns/1.creational-patterns/1.singleton";
 import { BuilderPattern } from "./design-patterns/1.creational-patterns/2.builder";
 import { FactoryPattern } from "./design-patterns/1.creational-patterns/3.factory";
 import { PrototypePattern } from "./design-patterns/1.creational-patterns/4.prototype";
 import { AdapterPattern } from "./design-patterns/2.structural-patterns/1.adapter";
-import { LiskovSubstitutionPrinciple } from "./SOLID/3.liskov-substitution";
-import { OpenClosePrinciple } from "./SOLID/2.open-close";
 
 const printMenu = () => {
   const menu = `
@@ -15,6 +16,7 @@ const printMenu = () => {
   1. Single Responsibility Principle
   2. Open Close Principle
   3. Liskov Substitution Principle
+  4. Interface Segregation Principle
   
   Design Patterns:
     Creational Patterns:
@@ -48,6 +50,10 @@ const main = async () => {
         }
         case 3: {
           await LiskovSubstitutionPrinciple();
+          break;
+        }
+        case 4: {
+          await InterfaceSegregationPrinciple();
           break;
         }
         // case 4: {
