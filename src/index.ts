@@ -1,15 +1,15 @@
 import readline from "readline";
 
-import { SingleResponsibilityPrinciple } from "./SOLID/1.single-responsibility";
-import { OpenClosePrinciple } from "./SOLID/2.open-close";
-import { LiskovSubstitutionPrinciple } from "./SOLID/3.liskov-substitution";
-import { InterfaceSegregationPrinciple } from "./SOLID/4.interface-segregation";
-import { DependencyInversionPrinciple } from "./SOLID/5.dependency-inversion";
-import { SingletonPattern } from "./design-patterns/1.creational-patterns/1.singleton";
-import { BuilderPattern } from "./design-patterns/1.creational-patterns/2.builder";
-import { FactoryPattern } from "./design-patterns/1.creational-patterns/3.factory";
-import { PrototypePattern } from "./design-patterns/1.creational-patterns/4.prototype";
-import { AdapterPattern } from "./design-patterns/2.structural-patterns/1.adapter";
+import { SingleResponsibilityPrinciple } from "./1.solid-principles/1.single-responsibility";
+import { OpenClosePrinciple } from "./1.solid-principles/2.open-close";
+import { LiskovSubstitutionPrinciple } from "./1.solid-principles/3.liskov-substitution";
+import { InterfaceSegregationPrinciple } from "./1.solid-principles/4.interface-segregation";
+import { DependencyInversionPrinciple } from "./1.solid-principles/5.dependency-inversion";
+import { SingletonPattern } from "./2.design-patterns/1.creational-patterns/1.singleton";
+import { BuilderPattern } from "./2.design-patterns/1.creational-patterns/2.builder";
+import { FactoryPattern } from "./2.design-patterns/1.creational-patterns/3.factory";
+import { PrototypePattern } from "./2.design-patterns/1.creational-patterns/4.prototype";
+import { AdapterPattern } from "./2.design-patterns/2.structural-patterns/1.adapter";
 
 const printMenu = () => {
   const menu = `
