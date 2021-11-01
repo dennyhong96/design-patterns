@@ -1,10 +1,11 @@
 import { Product } from "./Product";
 import { ProductColorSpecification } from "./ProductColorSpecification";
 import { ProductColorTypes } from "./types/ProductColorTypes";
-import { ProductCombinedSpecification } from "./ProducdAndSpecification";
+import { ProductAndSpecification } from "./ProducdAndSpecification";
 import { ProductFilter } from "./ProductFilter";
 import { ProductSizeSpecification } from "./ProductSizeSpecification";
 import { ProductSizeTypes } from "./types/ProductSizeTypes";
+import { ProductOrSpecification } from "./ProducdOrSpecification";
 
 export async function OpenClosePrinciple() {
   const p1 = new Product(
@@ -41,10 +42,19 @@ export async function OpenClosePrinciple() {
 
   const largeRedProducs = productFilter.filter(
     items,
-    new ProductCombinedSpecification(
+    new ProductAndSpecification(
       new ProductColorSpecification(ProductColorTypes.red),
       new ProductSizeSpecification(ProductSizeTypes.large)
     )
   );
   console.log("Large Red Products: ", largeRedProducs);
+
+  const largeOrRedProducts = productFilter.filter(
+    items,
+    new ProductOrSpecification(
+      new ProductColorSpecification(ProductColorTypes.red),
+      new ProductSizeSpecification(ProductSizeTypes.large)
+    )
+  );
+  console.log("Large or Red Products: ", largeOrRedProducts);
 }
