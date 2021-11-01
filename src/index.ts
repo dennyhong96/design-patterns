@@ -1,9 +1,10 @@
 import readline from "readline";
 
-import { SingleResponsibility } from "./SOLID/1.single-responsibility";
+import { SingleResponsibilityPrinciple } from "./SOLID/1.single-responsibility";
 import { OpenClosePrinciple } from "./SOLID/2.open-close";
 import { LiskovSubstitutionPrinciple } from "./SOLID/3.liskov-substitution";
 import { InterfaceSegregationPrinciple } from "./SOLID/4.interface-segregation";
+import { DependencyInversionPrinciple } from "./SOLID/5.dependency-inversion";
 import { SingletonPattern } from "./design-patterns/1.creational-patterns/1.singleton";
 import { BuilderPattern } from "./design-patterns/1.creational-patterns/2.builder";
 import { FactoryPattern } from "./design-patterns/1.creational-patterns/3.factory";
@@ -17,6 +18,7 @@ const printMenu = () => {
   2. Open Close Principle
   3. Liskov Substitution Principle
   4. Interface Segregation Principle
+  5. Dependency Inversion Principle
   
   Design Patterns:
     Creational Patterns:
@@ -41,7 +43,7 @@ const main = async () => {
     rl.question("Choose from the patterns - \n", async (answer: string) => {
       switch (Number(answer)) {
         case 1: {
-          await SingleResponsibility();
+          await SingleResponsibilityPrinciple();
           break;
         }
         case 2: {
@@ -54,6 +56,10 @@ const main = async () => {
         }
         case 4: {
           await InterfaceSegregationPrinciple();
+          break;
+        }
+        case 5: {
+          await DependencyInversionPrinciple();
           break;
         }
         // case 4: {

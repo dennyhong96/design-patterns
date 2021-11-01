@@ -3,7 +3,7 @@ import { PersistenceManager } from "./PersistenceManager";
 
 const FILE_PATH = "src/SOLID/1.single-responsibility/_file.txt";
 
-export async function SingleResponsibility() {
+export async function SingleResponsibilityPrinciple() {
   const journal = new Journal();
   journal.addEntry("Today is a good day.");
   const entyIndex = journal.addEntry("I need to go to jym.");
