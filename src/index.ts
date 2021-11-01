@@ -6,6 +6,7 @@ import { BuilderPattern } from "./design-patterns/1.creational-patterns/2.builde
 import { FactoryPattern } from "./design-patterns/1.creational-patterns/3.factory";
 import { PrototypePattern } from "./design-patterns/1.creational-patterns/4.prototype";
 import { AdapterPattern } from "./design-patterns/2.structural-patterns/1.adapter";
+import { LiskovSubstitutionPrinciple } from "./SOLID/3.liskov-substitution";
 import { OpenClosePrinciple } from "./SOLID/2.open-close";
 
 const printMenu = () => {
@@ -13,6 +14,7 @@ const printMenu = () => {
   SOLID principles:
   1. Single Responsibility Principle
   2. Open Close Principle
+  3. Liskov Substitution Principle
   
   Design Patterns:
     Creational Patterns:
@@ -45,29 +47,33 @@ const main = async () => {
           break;
         }
         case 3: {
-          await AdapterPattern();
+          await LiskovSubstitutionPrinciple();
           break;
         }
-        case 4: {
-          await SingletonPattern();
-          break;
-        }
-        case 5: {
-          await BuilderPattern();
-          break;
-        }
-        case 6: {
-          await FactoryPattern();
-          break;
-        }
-        case 7: {
-          await PrototypePattern();
-          break;
-        }
-        case 8: {
-          await AdapterPattern();
-          break;
-        }
+        // case 4: {
+        //   await AdapterPattern();
+        //   break;
+        // }
+        // case 4: {
+        //   await SingletonPattern();
+        //   break;
+        // }
+        // case 5: {
+        //   await BuilderPattern();
+        //   break;
+        // }
+        // case 6: {
+        //   await FactoryPattern();
+        //   break;
+        // }
+        // case 7: {
+        //   await PrototypePattern();
+        //   break;
+        // }
+        // case 8: {
+        //   await AdapterPattern();
+        //   break;
+        // }
         default: {
           break;
         }
