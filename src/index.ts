@@ -1,26 +1,28 @@
 import readline from "readline";
 
-import { SingleResponsibility } from "./SOLID/1.SingleResponsibility";
+import { SingleResponsibility } from "./SOLID/1.single-responsibility";
 import { SingletonPattern } from "./design-patterns/1.creational-patterns/1.singleton";
 import { BuilderPattern } from "./design-patterns/1.creational-patterns/2.builder";
 import { FactoryPattern } from "./design-patterns/1.creational-patterns/3.factory";
 import { PrototypePattern } from "./design-patterns/1.creational-patterns/4.prototype";
 import { AdapterPattern } from "./design-patterns/2.structural-patterns/1.adapter";
+import { OpenClosePrinciple } from "./SOLID/2.open-close";
 
 const printMenu = () => {
   const menu = `
   SOLID principles:
   1. Single Responsibility Principle
+  2. Open Close Principle
   
   Design Patterns:
     Creational Patterns:
-      2. Singleton
-      3. Builder
-      4. Factory
-      5. Prototype
+      3. Singleton
+      4. Builder
+      5. Factory
+      6. Prototype
   
     Structural Patterns:
-      6. Adapter
+      7. Adapter
   `;
   console.log(menu);
 };
@@ -39,22 +41,30 @@ const main = async () => {
           break;
         }
         case 2: {
-          await SingletonPattern();
+          await OpenClosePrinciple();
           break;
         }
         case 3: {
-          await BuilderPattern();
+          await AdapterPattern();
           break;
         }
         case 4: {
-          await FactoryPattern();
+          await SingletonPattern();
           break;
         }
         case 5: {
-          await PrototypePattern();
+          await BuilderPattern();
           break;
         }
         case 6: {
+          await FactoryPattern();
+          break;
+        }
+        case 7: {
+          await PrototypePattern();
+          break;
+        }
+        case 8: {
           await AdapterPattern();
           break;
         }

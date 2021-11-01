@@ -1,4 +1,4 @@
-import { IJournal } from "./IJournal";
+import { IJournal } from "./types/IJournal";
 
 export class Journal implements IJournal {
   public entries: { [key: number]: string } = {};

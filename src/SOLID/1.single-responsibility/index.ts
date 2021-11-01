@@ -1,7 +1,7 @@
 import { Journal } from "./Journal";
 import { PersistenceManager } from "./PersistenceManager";
 
-const FILE_PATH = "src/SOLID/1.SingleResponsibility/_file.txt";
+const FILE_PATH = "src/SOLID/1.single-responsibility/_file.txt";
 
 export async function SingleResponsibility() {
   const journal = new Journal();

@@ -1,6 +1,6 @@
 import fs from "fs/promises";
 
-import { IPersistenceManager } from "./IPersistenceManager";
+import { IPersistenceManager } from "./types/IPersistenceManager";
 
 // Use a seperate class PersistenceManager to managing writing/reading from files
 // instead of having the methods living within the Journal class
