@@ -36,21 +36,27 @@ const main = async () => {
       switch (Number(answer)) {
         case 1: {
           await SingleResponsibility();
+          break;
         }
         case 2: {
           await SingletonPattern();
+          break;
         }
         case 3: {
           await BuilderPattern();
+          break;
         }
         case 4: {
           await FactoryPattern();
+          break;
         }
         case 5: {
           await PrototypePattern();
+          break;
         }
         case 6: {
           await AdapterPattern();
+          break;
         }
         default: {
           break;
