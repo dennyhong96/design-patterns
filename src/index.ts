@@ -4,6 +4,7 @@ import { SingleResponsibility } from "./SOLID/1.SingleResponsibility";
 import { SingletonPattern } from "./design-patterns/1.creational-patterns/1.singleton";
 import { BuilderPattern } from "./design-patterns/1.creational-patterns/2.builder";
 import { FactoryPattern } from "./design-patterns/1.creational-patterns/3.factory";
+import { PrototypePattern } from "./design-patterns/1.creational-patterns/4.prototype";
 
 const printMenu = () => {
   const menu = `
@@ -15,6 +16,7 @@ const printMenu = () => {
       2. Singleton
       3. Builder
       4. Factory
+      5. Prototype
   `;
   console.log(menu);
 };
@@ -40,6 +42,9 @@ const main = async () => {
         case 4: {
           await FactoryPattern();
         }
+        case 5: {
+          await PrototypePattern();
+        }
         default: {
           break;
         }
@@ -49,5 +54,4 @@ const main = async () => {
     });
   });
 };
-
 main();
