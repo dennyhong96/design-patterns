@@ -6,9 +6,10 @@ import { LiskovSubstitutionPrinciple } from "./1.solid-principles/3.liskov-subst
 import { InterfaceSegregationPrinciple } from "./1.solid-principles/4.interface-segregation";
 import { DependencyInversionPrinciple } from "./1.solid-principles/5.dependency-inversion";
 import { SingletonPattern } from "./2.design-patterns/1.creational-patterns/1.singleton";
-import { BuilderPattern } from "./2.design-patterns/1.creational-patterns/2.builder";
+import { BuilderPattern } from "./2.design-patterns/1.creational-patterns/1.builder";
 import { FactoryPattern } from "./2.design-patterns/1.creational-patterns/3.factory";
 import { PrototypePattern } from "./2.design-patterns/1.creational-patterns/4.prototype";
+import { Builder } from "./2.design-patterns/1.creational-patterns/4.prototype/Builder";
 import { AdapterPattern } from "./2.design-patterns/2.structural-patterns/1.adapter";
 
 const printMenu = () => {
@@ -22,10 +23,7 @@ const printMenu = () => {
   
   Design Patterns:
     Creational Patterns:
-      3. Singleton
-      4. Builder
-      5. Factory
-      6. Prototype
+      6. Bulder
   
     Structural Patterns:
       7. Adapter
@@ -62,10 +60,10 @@ const main = async () => {
           await DependencyInversionPrinciple();
           break;
         }
-        // case 4: {
-        //   await AdapterPattern();
-        //   break;
-        // }
+        case 6: {
+          await BuilderPattern();
+          break;
+        }
         // case 4: {
         //   await SingletonPattern();
         //   break;
