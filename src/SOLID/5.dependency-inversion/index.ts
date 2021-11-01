@@ -2,6 +2,7 @@ import { Person } from "./Person";
 import { Relationships } from "./Relationships";
 import { Research } from "./Research";
 
+// A high-level module should never depend on low-level ones, it should depend on abstractions - interfaces/abstract classes
 export async function DependencyInversionPrinciple() {
   const denny = new Person("Denny");
   const jackie = new Person("Jackie");

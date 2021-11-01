@@ -3,6 +3,7 @@ import { PersistenceManager } from "./PersistenceManager";
 
 const FILE_PATH = "src/SOLID/1.single-responsibility/_file.txt";
 
+// One class should only have one reason to change (seperation of concerns)
 export async function SingleResponsibilityPrinciple() {
   const journal = new Journal();
   journal.addEntry("Today is a good day.");

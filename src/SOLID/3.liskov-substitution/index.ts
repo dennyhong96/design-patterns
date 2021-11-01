@@ -1,16 +1,7 @@
 import { Rectangle } from "./Rectangle";
 import { Square } from "./Square";
 
-function workWithRectangle(shape: Rectangle) {
-  const height = 9;
-  const width = 6;
-  shape.height = height;
-  shape.width = width;
-  const expectedArea = 6 * 9;
-  const actualArea = shape.getArea();
-  console.log(`Expected area: ${expectedArea}; Actual area: ${actualArea}`);
-}
-
+// A base type should always be able to be substitued by a sub-type.
 export async function LiskovSubstitutionPrinciple() {
   const rc = new Rectangle(4, 5);
   workWithRectangle(rc);
@@ -19,4 +10,14 @@ export async function LiskovSubstitutionPrinciple() {
   // this is a violation of the Liskov Substitution princple
   const sq = new Square(5);
   workWithRectangle(sq);
+}
+
+function workWithRectangle(shape: Rectangle) {
+  const height = 9;
+  const width = 6;
+  shape.height = height;
+  shape.width = width;
+  const expectedArea = 6 * 9;
+  const actualArea = shape.getArea();
+  console.log(`Expected area: ${expectedArea}; Actual area: ${actualArea}`);
 }

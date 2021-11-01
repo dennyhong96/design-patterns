@@ -7,6 +7,7 @@ import { ProductSizeSpecification } from "./ProductSizeSpecification";
 import { ProductSizeTypes } from "./types/ProductSizeTypes";
 import { ProductOrSpecification } from "./ProducdOrSpecification";
 
+// A class should be open for extensions, but close for modifications
 export async function OpenClosePrinciple() {
   const p1 = new Product(
     "Product 1",

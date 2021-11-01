@@ -7,7 +7,7 @@ import { IResearch } from "./types/IResearch";
 export class Research implements IResearch {
   // Reseach doesn't depend on an implementation of relationships
   // it depends on an abstraction - interface
-  constructor(public _relationships: IRelationships) {}
+  constructor(private _relationships: IRelationships) {}
 
   searchChildren(person: IPerson): IPerson[] {
     // return this._relationships.data...
