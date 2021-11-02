@@ -1,3 +1,4 @@
+import { PersonBuilder } from "./PersonBuliders";
 import { Tag } from "./Tag";
 
 // Builder pattern provides any API for constructing objects step-by-step, these objects are
@@ -21,4 +22,17 @@ export async function BuilderPattern() {
   html.clear();
 
   console.log("HTML string (cleared):\n", html.toString());
+
+  // Builder with multiple sub-builders to help build out different aspects of the object
+  const personInfo = new PersonBuilder().lives // PersonAddressBuilder
+    .at("9000 Roosevelt Way")
+    .in("Seattle")
+    .withPostCode("98005")
+    .works // PersonJobBuilder
+    .as("Frontend Developer")
+    .at("IMC")
+    .earning(9999999)
+    .build()
+    .toString();
+  console.log("Person Info: \n", personInfo);
 }
