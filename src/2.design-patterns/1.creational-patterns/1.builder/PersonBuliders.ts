@@ -2,6 +2,7 @@ import { Person } from "./Person";
 import { IPerson } from "./types/IPerson";
 import { IPersonBulder } from "./types/IPersonBuilder";
 
+// Base builder
 export class PersonBuilder implements IPersonBulder {
   constructor(public person: IPerson = new Person()) {}
 
@@ -18,6 +19,7 @@ export class PersonBuilder implements IPersonBulder {
   }
 }
 
+// Sub builder
 export class PersonAddressBuilder extends PersonBuilder {
   constructor(person: IPerson) {
     super(person); // so that the person reference is the same one
@@ -39,6 +41,7 @@ export class PersonAddressBuilder extends PersonBuilder {
   }
 }
 
+// Sub builder
 export class PersonJobBuilder extends PersonBuilder {
   constructor(person: IPerson) {
     super(person);

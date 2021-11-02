@@ -1,3 +1,4 @@
+import { CodeBuilder } from "./CodeBulder";
 import { PersonBuilder } from "./PersonBuliders";
 import { Tag } from "./Tag";
 
@@ -11,17 +12,22 @@ export async function BuilderPattern() {
     .addChild("li", "foo")
     .addChild("li", "bar")
     .addChild("li", "baz");
-
   console.log(
     "HTML string:\n",
     // Step 3
     html.toString()
   );
-
   // Step 4
   html.clear();
-
   console.log("HTML string (cleared):\n", html.toString());
+
+  const codeString1 = new CodeBuilder("Person")
+    .addField("name")
+    .addField("age")
+    .toString();
+  console.log("Code string 1:\n", codeString1);
+  const codeString2 = new CodeBuilder("Vehicle").toString();
+  console.log("Code string 2:\n", codeString2);
 
   // Builder with multiple sub-builders to help build out different aspects of the object
   const personInfo = new PersonBuilder().lives // PersonAddressBuilder
