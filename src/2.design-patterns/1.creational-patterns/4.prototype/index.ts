@@ -1,6 +1,7 @@
 import { Serializer } from "./Serializer";
 import { Address } from "./Address";
 import { Person } from "./Person";
+import { EmployeeFactory } from "./EmployeeFactory";
 
 // An object that supports method to clone itself (deep clone)
 export async function PrototypePattern() {
@@ -34,4 +35,10 @@ export async function PrototypePattern() {
   sharon2.name = "Sharon";
   sharon2.age = 27;
   console.log(sharon2.toString());
+
+  // Prototype Factory
+  const mainCampusEmployee = EmployeeFactory.newMainCampusEmployee("Denny", 24);
+  console.log("mainCampusEmployee", mainCampusEmployee);
+  const newCampusEmployee = EmployeeFactory.newNewCampusEmployee("Sharon", 27);
+  console.log("newCampusEmployee", newCampusEmployee);
 }
