@@ -7,7 +7,8 @@ import { InterfaceSegregationPrinciple } from "./1.solid-principles/4.interface-
 import { DependencyInversionPrinciple } from "./1.solid-principles/5.dependency-inversion";
 import { BuilderPattern } from "./2.design-patterns/1.creational-patterns/1.builder";
 import { FactoryPattern } from "./2.design-patterns/1.creational-patterns/2.factory";
-import { PrototypePattern } from "./2.design-patterns/1.creational-patterns/4.prototype";
+import { PrototypePattern } from "./2.design-patterns/1.creational-patterns/3.prototype";
+import { SingletonPattern } from "./2.design-patterns/1.creational-patterns/4.singleton";
 
 const printMenu = () => {
   const menu = `
@@ -23,6 +24,7 @@ const printMenu = () => {
       6. Bulder Pattern
       7. Factory Pattern
       8. Prototype Pattern
+      9. Singleton Pattern
 
     Structural Patterns:
       7. Adapter Pattern
@@ -71,26 +73,10 @@ const main = async () => {
           await PrototypePattern();
           break;
         }
-        // case 4: {
-        //   await SingletonPattern();
-        //   break;
-        // }
-        // case 5: {
-        //   await BuilderPattern();
-        //   break;
-        // }
-        // case 6: {
-        //   await FactoryPattern();
-        //   break;
-        // }
-        // case 7: {
-        //   await PrototypePattern();
-        //   break;
-        // }
-        // case 8: {
-        //   await AdapterPattern();
-        //   break;
-        // }
+        case 9: {
+          await SingletonPattern();
+          break;
+        }
         default: {
           break;
         }

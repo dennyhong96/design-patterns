@@ -3,7 +3,8 @@ import { Address } from "./Address";
 import { Person } from "./Person";
 import { EmployeeFactory } from "./EmployeeFactory";
 
-// An object that supports method to clone itself (deep clone)
+// Store the prototype(a partially or fully constructed object),
+// and deep clone it to get an instance of it and do furthur modification.
 export async function PrototypePattern() {
   // Prototype Pattern using deepCopy method on classes
   // Requires every class in the classes hierarchy to support deep copy
