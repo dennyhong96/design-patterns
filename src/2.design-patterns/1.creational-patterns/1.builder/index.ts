@@ -2,7 +2,7 @@ import { CodeBuilder } from "./CodeBulder";
 import { PersonBuilder } from "./PersonBuliders";
 import { Tag } from "./Tag";
 
-// Builder pattern provides any API for constructing objects step-by-step, these objects are
+// Builder pattern provides an API for constructing objects step-by-step, these objects are
 // typically complex and hard to constrcuct just by using a single constructor call
 export async function BuilderPattern() {
   const htmlString1 = Tag.create("ul")
