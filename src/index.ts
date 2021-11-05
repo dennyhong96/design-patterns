@@ -5,11 +5,13 @@ import { OpenClosePrinciple } from "./1.solid-principles/2.open-close";
 import { LiskovSubstitutionPrinciple } from "./1.solid-principles/3.liskov-substitution";
 import { InterfaceSegregationPrinciple } from "./1.solid-principles/4.interface-segregation";
 import { DependencyInversionPrinciple } from "./1.solid-principles/5.dependency-inversion";
+
 import { BuilderPattern } from "./2.design-patterns/1.creational-patterns/1.builder";
 import { FactoryPattern } from "./2.design-patterns/1.creational-patterns/2.factory";
 import { PrototypePattern } from "./2.design-patterns/1.creational-patterns/3.prototype";
 import { SingletonPattern } from "./2.design-patterns/1.creational-patterns/4.singleton";
 import { AdapterPattern } from "./2.design-patterns/2.structural-patterns/1.adapter";
+import { BridgePattern } from "./2.design-patterns/2.structural-patterns/2.bridge";
 
 const printMenu = () => {
   const menu = `
@@ -29,6 +31,7 @@ const printMenu = () => {
 
     Structural Patterns:
       10. Adapter Pattern
+      11. Bridge Pattern
   `;
   console.log(menu);
 };
@@ -80,6 +83,10 @@ const main = async () => {
         }
         case 10: {
           await AdapterPattern();
+          break;
+        }
+        case 11: {
+          await BridgePattern();
           break;
         }
         default: {

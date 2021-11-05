@@ -4,7 +4,7 @@ import { Point } from "./Point";
 export class LineToPointAdapter {
   private static linesProcessed = 0;
 
-  // A static shared cache to help reduce LineToPointAdapter's workload
+  // A static shared cache to help reduce LineToPointAdapter's workload and memory
   private static cache: { [key: string]: Array<Point> } = {};
 
   public points: Array<Point> = [];
