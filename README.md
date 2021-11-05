@@ -10,6 +10,8 @@ SOLID principles are a selection of 5 software design principles that are freque
 
 # [Design Patterns](src/2.design-patterns)
 
+Design patterns are typical solutions to common software problems.
+
 ## [Creational Patterns](src/2.design-patterns/1.creational-patterns)
 
 1. [Builder Pattern](src/2.design-patterns/1.creational-patterns/1.builder)
@@ -21,5 +23,6 @@ SOLID principles are a selection of 5 software design principles that are freque
 
 1. [Adapter Pattern](src/2.design-patterns/2.structural-patterns/1.adapter)
 2. [Bridge Pattern](src/2.design-patterns/2.structural-patterns/2.bridge)
+3. [Composite Pattern](src/2.design-patterns/2.structural-patterns/3.composite)
 
 ......
