@@ -14,6 +14,7 @@ import { AdapterPattern } from "./2.design-patterns/2.structural-patterns/1.adap
 import { BridgePattern } from "./2.design-patterns/2.structural-patterns/2.bridge";
 import { CompositePattern } from "./2.design-patterns/2.structural-patterns/3.composite";
 import { DecoratorPattern } from "./2.design-patterns/2.structural-patterns/4.decorator";
+import { FacadePattern } from "./2.design-patterns/2.structural-patterns/5.facade";
 
 const printMenu = () => {
   const menu = `
@@ -36,6 +37,7 @@ const printMenu = () => {
       11. Bridge Pattern
       12. Composite Pattern
       13. Decorator Pattern
+      14. Facade Pattern
   `;
   console.log(menu);
 };
@@ -99,6 +101,10 @@ const main = async () => {
         }
         case 13: {
           await DecoratorPattern();
+          break;
+        }
+        case 14: {
+          await FacadePattern();
           break;
         }
         default: {
