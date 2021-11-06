@@ -13,6 +13,7 @@ import { SingletonPattern } from "./2.design-patterns/1.creational-patterns/4.si
 import { AdapterPattern } from "./2.design-patterns/2.structural-patterns/1.adapter";
 import { BridgePattern } from "./2.design-patterns/2.structural-patterns/2.bridge";
 import { CompositePattern } from "./2.design-patterns/2.structural-patterns/3.composite";
+import { DecoratorPattern } from "./2.design-patterns/2.structural-patterns/4.decorator";
 
 const printMenu = () => {
   const menu = `
@@ -34,6 +35,7 @@ const printMenu = () => {
       10. Adapter Pattern
       11. Bridge Pattern
       12. Composite Pattern
+      13. Decorator Pattern
   `;
   console.log(menu);
 };
@@ -93,6 +95,10 @@ const main = async () => {
         }
         case 12: {
           await CompositePattern();
+          break;
+        }
+        case 13: {
+          await DecoratorPattern();
           break;
         }
         default: {

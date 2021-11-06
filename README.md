@@ -14,6 +14,10 @@ Design patterns are typical solutions to common software problems.
 
 ## [Creational Patterns](src/2.design-patterns/1.creational-patterns)
 
+- Deal with the creation/construction of objects
+- Explicit (constructor) vs. Implicit (DI, reflection, etc.)
+- Wholesale (single statement) vs. Piecewise (step-by-step)
+
 1. [Builder Pattern](src/2.design-patterns/1.creational-patterns/1.builder)
 2. [Factory Pattern](src/2.design-patterns/1.creational-patterns/2.factory)
 3. [Prototype Pattern](src/2.design-patterns/1.creational-patterns/3.prototype)
@@ -21,8 +25,13 @@ Design patterns are typical solutions to common software problems.
 
 ## [Structural Patterns](src/2.design-patterns/2.structural-patterns)
 
+- Concerned with the structure (e.g., class members)
+- Many patterns are wrappers that mimic the underlying class' interface
+- Stress the importance of good API design
+
 1. [Adapter Pattern](src/2.design-patterns/2.structural-patterns/1.adapter)
 2. [Bridge Pattern](src/2.design-patterns/2.structural-patterns/2.bridge)
 3. [Composite Pattern](src/2.design-patterns/2.structural-patterns/3.composite)
+4. [Decorator Pattern](src/2.design-patterns/2.structural-patterns/4.decorator)
 
 ......
