@@ -33,5 +33,6 @@ Design patterns are typical solutions to common software problems.
 2. [Bridge Pattern](src/2.design-patterns/2.structural-patterns/2.bridge)
 3. [Composite Pattern](src/2.design-patterns/2.structural-patterns/3.composite)
 4. [Decorator Pattern](src/2.design-patterns/2.structural-patterns/4.decorator)
+5. [Facade Pattern](src/2.design-patterns/2.structural-patterns/5.facade)
 
 ......
