@@ -1,6 +1,8 @@
 import { GraphicObjectColorTypes } from "./types/GraphicObjectColorTypes";
 import { IGraphicObject } from "./types/IGraphicObject";
 
+// The GraphicObject instance can be a scalar object
+// or a root for a tree of GraphicObject instances
 export class GraphicObject implements IGraphicObject {
   public static groupCount = 1;
 
