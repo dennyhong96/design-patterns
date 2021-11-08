@@ -1,8 +1,6 @@
-// Facade pattern provides a simplified interface to interact with a library
-
 import { Facade } from "./Facade";
 
-// framework, or other complex set of classes.
+// Facade pattern provides a simplified interface to interact with one or several complex sub systems
 export async function FacadePattern() {
   const facade = new Facade();
   facade.doWork();

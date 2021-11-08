@@ -15,6 +15,7 @@ import { BridgePattern } from "./2.design-patterns/2.structural-patterns/2.bridg
 import { CompositePattern } from "./2.design-patterns/2.structural-patterns/3.composite";
 import { DecoratorPattern } from "./2.design-patterns/2.structural-patterns/4.decorator";
 import { FacadePattern } from "./2.design-patterns/2.structural-patterns/5.facade";
+import { FlyweightPattern } from "./2.design-patterns/2.structural-patterns/6.flyweight";
 
 const printMenu = () => {
   const menu = `
@@ -38,6 +39,7 @@ const printMenu = () => {
       12. Composite Pattern
       13. Decorator Pattern
       14. Facade Pattern
+      15. Flyweight Pattern
   `;
   console.log(menu);
 };
@@ -105,6 +107,10 @@ const main = async () => {
         }
         case 14: {
           await FacadePattern();
+          break;
+        }
+        case 15: {
+          await FlyweightPattern();
           break;
         }
         default: {
