@@ -35,5 +35,6 @@ Design patterns are typical solutions to common software problems.
 4. [Decorator Pattern](src/2.design-patterns/2.structural-patterns/4.decorator)
 5. [Facade Pattern](src/2.design-patterns/2.structural-patterns/5.facade)
 6. [Flyweight Pattern](src/2.design-patterns/2.structural-patterns/6.flyweight)
+7. [Proxy Pattern](src/2.design-patterns/2.structural-patterns/7.proxy)
 
 ......

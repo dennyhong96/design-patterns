@@ -16,6 +16,7 @@ import { CompositePattern } from "./2.design-patterns/2.structural-patterns/3.co
 import { DecoratorPattern } from "./2.design-patterns/2.structural-patterns/4.decorator";
 import { FacadePattern } from "./2.design-patterns/2.structural-patterns/5.facade";
 import { FlyweightPattern } from "./2.design-patterns/2.structural-patterns/6.flyweight";
+import { ProxyPattern } from "./2.design-patterns/2.structural-patterns/7.proxy";
 
 const printMenu = () => {
   const menu = `
@@ -40,6 +41,7 @@ const printMenu = () => {
       13. Decorator Pattern
       14. Facade Pattern
       15. Flyweight Pattern
+      16. Proxy Pattern
   `;
   console.log(menu);
 };
@@ -111,6 +113,10 @@ const main = async () => {
         }
         case 15: {
           await FlyweightPattern();
+          break;
+        }
+        case 16: {
+          await ProxyPattern();
           break;
         }
         default: {
